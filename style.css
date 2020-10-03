@@ -52,7 +52,7 @@
   }
 
   *, *::before, *::after{
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 * {
     margin: 0;
@@ -75,7 +75,12 @@ a:hover {
 a:visited {
     color: white;
      }
-     
+
+h1{
+    color: #007765;
+    font-size: 64px;
+}
+
 /* start header */
 .header{
     position: fixed;
@@ -105,19 +110,26 @@ header li:first-child {
    }
 
 .wrapper{
-    width: 1110px;
+    max-width: 1110px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     padding-right: 55px;
     padding-left: 55px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .logo{
     padding-top: 20px;
     float: left;
 }
+
 /* end header */
 
+
+
 /* start jumbotron */
+
 .jumbotron{
     background: url("image/image.png") center no-repeat;
     width: 100%;
@@ -134,13 +146,12 @@ header li:first-child {
 }
 /* end jumbotron */
 
+
+
 /* The Problem start */
+
 .problem{
     background: #EEEEEE;
-}
-.problem h1{
-    color: #007765;
-    font-size: 64px;
 }
 .problem-text{
     padding-top: 48px;
@@ -153,7 +164,11 @@ header li:first-child {
 }
 /* The Problem end */
 
+
+
+
 /* Hero start */
+
 .hero{
     background: url(image/blue_image.png) center no-repeat;
     background-size: cover;
@@ -167,7 +182,10 @@ header li:first-child {
 }
 /* Hero end */
 
+
+
 /* ppc start */
+
 .ppc{
     padding-top: 48px;
     padding-bottom: 92px;
@@ -186,20 +204,19 @@ header li:first-child {
 }
 .ppc h1{
     margin-bottom: 16px;
-    font-size: 64px;
-    color: #007765;
 }
 /* ppc end */
 
+
+
 /* The Team start*/
+
 .the-team{
     background-color: #EEEEEE;
     padding-bottom: 112px;
     padding-top: 58px;
 }
 .the-team h1{
-    font-size: 64px;
-    color: #007765;
     margin-top: 56px;
     margin-bottom: 56px;
 
@@ -225,7 +242,10 @@ header li:first-child {
 }
 /* The Team end*/
 
+
+
 /* Footer start */
+
 .footer{
     background-color: #333333;
     padding-top: 50px;
